@@ -11,7 +11,7 @@ Automated data platform reducing reporting time from 48 hours to 3 hours through
 - **Azure Data Lake Storage Gen2** (Source data)
 
 ### Architecture
-![Architecture Diagram](architecture/architecture-diagram.png)
+1_BDRLgWSqs0FYrhXLFMzvRQ.webp
 
 
 ## Data Model
