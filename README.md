@@ -15,6 +15,8 @@ Automated data platform reducing reporting time from 48 hours to 3 hours through
 
 
 ## Data Model
+1_uxtc2natEAoV_GlFpPfF_w.webp
+
 **Medallion Architecture:**
 - Bronze: Raw ingestion from ADLS
 - Silver: Cleaned and standardized data
@@ -32,6 +34,7 @@ Automated data platform reducing reporting time from 48 hours to 3 hours through
 - fact_leads (150K leads, $362K budget)
 
 ## Pipeline
+1_SYGqvzr-DnTlMx-nPhyNlw.webp
 **PL_MASTER_DAILY_BATCH** runs daily at 00:30 AM:
 1. Copy Data: ADLS → Bronze
 2. Notebook: Bronze → Silver
@@ -39,8 +42,11 @@ Automated data platform reducing reporting time from 48 hours to 3 hours through
 
 ## Dashboards
 - Sales Performance
+1_dLkXiFM2upvTNK0VqNsQig.webp
 - Marketing ROI
+1_HG1getX8BhOQYAWuraobYQ.webp
 - Pricing & Inventory
+1_8LH3S-yDhL7mGB7e-l9p4w.webp
 
 ## Setup Instructions
 1. Clone repository
