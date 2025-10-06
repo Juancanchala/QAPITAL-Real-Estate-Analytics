@@ -52,4 +52,5 @@ Automated data platform reducing reporting time from 48 hours to 3 hours through
 ## Author
 Juan Camilo Canchala hernández 
 [www.linkedin.com/in/ingjuancanchala](https://www.linkedin.com/posts/ingjuancanchala_github-juancanchalaqapital-real-estate-analytics-activity-7380824281728831488-d6pS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3QUF0Bx7F1BOD3xb6WINduF_31kKk-rV0)
+
 https://medium.com/@juan.canchala/de-excel-a-insights-en-tiempo-real-construyendo-una-plataforma-data-driven-en-microsoft-fabric-461c5dfe7e57
