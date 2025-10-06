@@ -1,2 +1,54 @@
-# QAPITAL-Real-Estate-Analytics
-"End-to-end data platform for real estate analytics using Microsoft Fabric"
+# QAPITAL Real Estate Analytics Platform
+End-to-end data analytics solution for real estate sales, marketing and inventory management built on Microsoft Fabric.
+
+## Project Overview
+Automated data platform reducing reporting time from 48 hours to 3 hours through batch processing and real-time dashboards.
+
+### Tech Stack
+- **Microsoft Fabric** (OneLake, Data Factory, Lakehouse, Warehouse)
+- **PySpark** (Data transformations)
+- **Power BI** (Dashboards)
+- **Azure Data Lake Storage Gen2** (Source data)
+
+### Architecture
+![Architecture Diagram](architecture/architecture-diagram.png)
+
+
+## Data Model
+**Medallion Architecture:**
+- Bronze: Raw ingestion from ADLS
+- Silver: Cleaned and standardized data
+- Gold: Star schema (5 dimensions + 2 facts)
+
+### Dimensions
+- dim_broker
+- dim_client
+- dim_project
+- dim_property
+- dim_campaign
+
+### Facts
+- fact_sales (30 transactions, $6M total)
+- fact_leads (150K leads, $362K budget)
+
+## Pipeline
+**PL_MASTER_DAILY_BATCH** runs daily at 00:30 AM:
+1. Copy Data: ADLS → Bronze
+2. Notebook: Bronze → Silver
+3. Notebook: Silver → Gold
+
+## Dashboards
+- Sales Performance
+- Marketing ROI
+- Pricing & Inventory
+
+## Setup Instructions
+1. Clone repository
+2. Import pipeline JSON to Fabric Data Factory
+3. Import notebooks to Fabric Lakehouse
+4. Configure ADLS connection with SAS token
+5. Run pipeline manually for initial load
+
+## Author
+Juan Camilo Canchala hernández 
+www.linkedin.com/in/ingjuancanchala
